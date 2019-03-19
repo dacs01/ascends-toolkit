@@ -46,7 +46,7 @@ List of ORNL contributors
 * Jian Peng (pengj@ornl.gov)
 
 
-## Installation (Easy)
+# Installation (An Easy Way)
 ```sh
 pip install ascends-toolkit
 (or pip3 install ascends-toolkit)
