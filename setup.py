@@ -2,12 +2,12 @@ from setuptools import setup
  
 setup(
     name='ascends-toolkit',
-    version='0.1',
+    version='0.2c',
     description='ASCENDS: Advanced data SCiENce toolkit for Non-Data Scientists',
     long_description='',
     url='https://github.com/liza183/ascends-toolkit',
-    author='Matt Sangkeun Lee',
-    author_email='lee4@ornl.gov',
+    author='Matt Sangkeun Lee, Dongwon Shin, Jian Peng',
+    author_email='lees4@ornl.gov',
     license='MIT License',
     classifiers=[
         'Programming Language :: Python',
@@ -15,7 +15,7 @@ setup(
         'Programming Language :: Python :: 3 :: Only',
     ],
     packages=[],
-    py_modules=['clien'],
+    py_modules=['ascends'],
     python_requires='>=3.2',
     install_requires=[
         'matplotlib',
@@ -25,6 +25,7 @@ setup(
         'keras',
         'scikit-learn',
         'minepy',
+	'np_utils',
     ],  
-    scripts=['train_regression.py','ascends_server.py','train_classifier.py','classify_with_model.py','predict_with_model.py']
+    scripts=['train_regression.py','train_classifier.py','classify_with_model.py','predict_with_model.py'],
 )
