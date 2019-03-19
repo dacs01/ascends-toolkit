@@ -45,7 +45,15 @@ List of ORNL contributors
 * Dongwon Shin, (shind@ornl.gov)
 * Jian Peng (pengj@ornl.gov)
 
-# Installation
+
+## Installation (Easy)
+```sh
+pip install ascends-toolkit
+(or pip3 install ascends-toolkit)
+
+```
+
+# Installation (With Anaconda)
 
 ASCENDS requires Python version 3.X, and using Anaconda is recommended.
 Please download Anaconda from https://www.anaconda.com/download/ and install first.
