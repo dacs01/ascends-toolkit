@@ -2,7 +2,7 @@ from setuptools import setup
  
 setup(
     name='ascends-toolkit',
-    version='0.2c',
+    version='0.2.1',
     description='ASCENDS: Advanced data SCiENce toolkit for Non-Data Scientists',
     long_description='',
     url='https://github.com/liza183/ascends-toolkit',
