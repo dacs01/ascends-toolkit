@@ -25,6 +25,7 @@ setup(
         'keras',
         'scikit-learn',
         'minepy',
+	'np_utils'
     ],  
     scripts=['train_regression.py','ascends_server.py','train_classifier.py','classify_with_model.py','predict_with_model.py']
 )
