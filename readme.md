@@ -20,12 +20,12 @@ number of bedrooms, number of cars that can be parked in its garages, number of 
 
 * ASCENDS principles
 
-- Supporting various classification/regression techniques (Linear regression, logistic regression, random forest, support vector machine, neural network, ...) 
-- Supporting Feature selection based on various criteria
-- Provides automatic hyperparameter tuning
-- No programming skills required; but ASCEBDS library can be used in your code if needed
-- Using standard CSV (comma separated values) format data set 
-- Built on top of open source projects (keras, tensorflow, scikit-learn, etc.)
+ - Supporting various classification/regression techniques (Linear regression, logistic regression, random forest, support vector machine, neural network, ...) 
+ - Supporting Feature selection based on various criteria
+ - Provides automatic hyperparameter tuning
+ - No programming skills required; but ASCEBDS library can be used in your code if needed
+ - Using standard CSV (comma separated values) format data set 
+ - Built on top of open source projects (keras, tensorflow, scikit-learn, etc.)
 
 Although ASCENDS has been originally developed for material scientists' research on high temperature alloy design,
 the tool can be also used for many other applications.
