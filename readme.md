@@ -18,7 +18,7 @@ Users can train a predictive model (mapping function) that approximates a contin
 using ASCENDS. For instance, ASCENDS can train a model for predicting a value of house based on square footage, 
 number of bedrooms, number of cars that can be parked in its garages, number of storages.
 
-* ASCENDS principles
+ASCENDS principles
 
 - Supporting various classification/regression techniques (Linear regression, logistic regression, random forest, support vector machine, neural network, ...) 
 - Supporting Feature selection based on various criteria
