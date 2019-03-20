@@ -105,7 +105,7 @@ source deactivate ascends
 # Getting Started: Classification
 
 To train your first model, we are going to use the Iris data set, which is one of the classic datasets introduced by the British statistician and biologist Ronald Fisher in his 1936 paper. 
-Download the iris.csv into your ASCENDS/data directory. (Save as the following link)
+Download the iris.csv into your data directory. (Save as the following link)
 
 Link: https://raw.githubusercontent.com/pandas-dev/pandas/master/pandas/tests/data/iris.csv
 
@@ -124,8 +124,9 @@ SepalLength,SepalWidth,PetalLength,PetalWidth,Name
 4.6,3.1,1.5,0.2,Iris-setosa
 ```
 Let's try to train a classification model by executing the following command to train a classification model using ASENDS:
+In this tutorial, we assume tat you already created a output directory to save output files and stored data files in data directory.
 
-```./train_classifier.py data/iris.csv output/iris Name --mapping "{'Name': {'Iris-setosa':0, 'Iris-versicolor':1, 'Iris-virginica':2}}```
+```train_classifier.py data/iris.csv output/iris Name --mapping "{'Name': {'Iris-setosa':0, 'Iris-versicolor':1, 'Iris-virginica':2}}```
 
 `data/iris.csv` is the input file that we just downloaded in the data folder. `output/iris` is the path and the tag that will be used for output files. 
 `Name` is the target column name. So, ASCENDS will train a model that predicts `Name` when four other column (SepalLength,SepalWidth,PetalLength,PetalWidth) 
@@ -136,7 +137,7 @@ the categorical values into numerical values. This is done by using `--mapping` 
 Then you will see, the following result.
 
 ```
-$ ./train_classifier.py data/iris.csv output/iris Name --mapping "{'Name': {'Iris-setosa':0, 'Iris-versicolor':1, 'Iris-virginica':2}}"
+$ train_classifier.py data/iris.csv output/iris Name --mapping "{'Name': {'Iris-setosa':0, 'Iris-versicolor':1, 'Iris-virginica':2}}"
 Using TensorFlow backend.
 
  * ASCENDS: Advanced data SCiENce toolkit for Non-Data Scientists 
@@ -178,10 +179,10 @@ SepalLength,SepalWidth,PetalLength,PetalWidth
 ```
 
 As we can see above, we don't know what class each line belongs. Let's run the following:
-```./classify_with_model.py output/iris\,Model\=RF\,accuracy\=0.9466666666666667\,Scaler\=StandardScaler.pkl data/iris_test_input.csv output/iris_test_prediction.csv --mapping "{'Name': {'Iris-setosa':0, 'Iris-versicolor':1, 'Iris-virginica':2}}"```
+```classify_with_model.py output/iris\,Model\=RF\,accuracy\=0.9466666666666667\,Scaler\=StandardScaler.pkl data/iris_test_input.csv output/iris_test_prediction.csv --mapping "{'Name': {'Iris-setosa':0, 'Iris-versicolor':1, 'Iris-virginica':2}}"```
 
 Executing the above command will predict category for the input data `data\iris_test_input.csv` and result will be saved in `output/iris_test_prediction.csv`.
-Note that we specified the trained model file we achieved ealier via ```./train_classifier.py``` command.
+Note that we specified the trained model file we achieved ealier via ```train_classifier.py``` command.
 
 When you open up the generated output file `output/iris_test_prediction.csv`,
 ```
@@ -216,7 +217,7 @@ The attributes are deﬁned as follows (taken from the UCI Machine Learning Repo
 The following shows how to train a regression model using ASCENDS to predict `medv`.
 
 ```
-$ ./train_regression.py data/BostonHousing.csv output/BostonHousing medv
+$ train_regression.py data/BostonHousing.csv output/BostonHousing medv
 Using TensorFlow backend.
 
  * ASCENDS: Advanced data SCiENce toolkit for Non-Data Scientists 
@@ -248,7 +249,7 @@ Using TensorFlow backend.
 ```
 Expected MAE (Mean Absolute Error) is 2.271 and R2 (https://bit.ly/2pP83Eb) is 0.857.
 
-Copy the following text into a new file and save it to `data\BostonHousing_test_input.csv`.
+Copy the following text into a new file and save it to `data/BostonHousing_test_input.csv`.
 
 ```
 crim,zn,indus,chas,nox,rm,age,dis,rad,tax,ptratio,b,lstat
@@ -258,11 +259,11 @@ crim,zn,indus,chas,nox,rm,age,dis,rad,tax,ptratio,b,lstat
 
 Similar to classification example, let's run the following:
 ```
-./regression_with_model.py ./output/BostonHousing,Model=RF,MAE=2.271302387431676,R2=0.8571003609225923,Scaler=StandardScaler.pkl data/BostonHousing_test_input.csv output/BostonHousing_test_prediction.csv
+regression_with_model.py ./output/BostonHousing,Model=RF,MAE=2.271302387431676,R2=0.8571003609225923,Scaler=StandardScaler.pkl data/BostonHousing_test_input.csv output/BostonHousing_test_prediction.csv
 ```
 
-Executing the above command will predict category for the input data `data\BostonHousing_test_input.csv` and result will be saved in `output/BostonHousing_test_prediction.csv`.
-Note that we specified the trained model file we achieved ealier via ```./train_regression.py``` command.
+Executing the above command will predict category for the input data `data/BostonHousing_test_input.csv` and result will be saved in `output/BostonHousing_test_prediction.csv`.
+Note that we specified the trained model file we achieved ealier via ```train_regression.py``` command.
 
 # License
 
