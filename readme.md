@@ -53,7 +53,7 @@ List of ORNL contributors
 ASCENDS requires Python version 3.X, and using Anaconda is recommended.
 Please download Anaconda from https://www.anaconda.com/download/ and install first.
 
-Once you installed Anaconda, you can create a new Python environment for ascends by doing:
+Once you installed Anaconda (with Python 3.X), you can create a new Python environment for ascends by doing:
 
 ```
 conda create --name ascends
