@@ -5,7 +5,6 @@ warnings.filterwarnings('ignore')
 
 import pickle
 import pandas as pd
-from matplotlib import pyplot as plt
 from sklearn.preprocessing import StandardScaler
 from sklearn.preprocessing import Normalizer
 from sklearn.preprocessing import MinMaxScaler
@@ -17,6 +16,8 @@ import os
 import sys
 import configparser
 import matplotlib
+matplotlib.use('TkAgg')
+import matplotlib.pyplot as plt
 import csv
 from sklearn.cluster import KMeans
 from sklearn.decomposition import PCA
@@ -25,7 +26,7 @@ from sklearn.linear_model import SGDRegressor
 from sklearn.isotonic import IsotonicRegression
 from sklearn.metrics import mean_squared_error
 from sklearn.ensemble import RandomForestRegressor
-from pandas.tools.plotting import scatter_matrix
+from pandas.plotting import scatter_matrix
 from sklearn.neighbors import KNeighborsRegressor
 from sklearn.isotonic import IsotonicRegression
 from sklearn.kernel_ridge import KernelRidge
