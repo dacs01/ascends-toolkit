@@ -179,7 +179,10 @@ SepalLength,SepalWidth,PetalLength,PetalWidth
 ```
 
 As we can see above, we don't know what class each line belongs. Let's run the following:
-```classify_with_model.py output/iris\,Model\=RF\,accuracy\=0.9466666666666667\,Scaler\=StandardScaler.pkl data/iris_test_input.csv output/iris_test_prediction.csv --mapping "{'Name': {'Iris-setosa':0, 'Iris-versicolor':1, 'Iris-virginica':2}}"```
+
+```
+classify_with_model.py output/iris\,Model\=RF\,accuracy\=0.9466666666666667\,Scaler\=StandardScaler.pkl data/iris_test_input.csv output/iris_test_prediction.csv --mapping "{'Name': {'Iris-setosa':0, 'Iris-versicolor':1, 'Iris-virginica':2}}"
+```
 
 Executing the above command will predict category for the input data `data\iris_test_input.csv` and result will be saved in `output/iris_test_prediction.csv`.
 Note that we specified the trained model file we achieved ealier via ```train_classifier.py``` command.
