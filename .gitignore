@@ -3,4 +3,8 @@
 .ipynb_checkpoints/
 .DS_Store
 notebook/
+dist/
+build/
+.eggs/
+ascends_toolkit.egg-info/
 __pycache__
