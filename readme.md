@@ -5,7 +5,7 @@
 ASCENDS is a toolkit that is developed to assist scientists or any persons who want to use their data for machine leearning.
 We know that there are so many tools available for data scientists, but most of them require programming skills and often overwhelming.
 We aim to provide a set of simple but powerful tools for non-data scientists to be able to intuitively perform various 
-advanced data analysis and machine learning techniques with simple interfaces (a command-line interface and a web-based GUI). 
+advanced data analysis and machine learning techniques with simple interfaces (**a command-line interface** and a web-based GUI).
 
 The current version of ASCENDS mainly focuses on two different machine learning tasks - classification and regression (value prediction). 
 
