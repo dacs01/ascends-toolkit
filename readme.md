@@ -5,7 +5,7 @@
 ASCENDS is a toolkit that is developed to assist scientists or any persons who want to use their data for machine leearning.
 We know that there are so many tools available for data scientists, but most of them require programming skills and often overwhelming.
 We aim to provide a set of simple but powerful tools for non-data scientists to be able to intuitively perform various 
-advanced data analysis and machine learning techniques with simple interfaces (a command-line and a web-based GUI). 
+advanced data analysis and machine learning techniques with simple interfaces (a command-line interface and a web-based GUI). 
 
 The current version of ASCENDS mainly focuses on two different machine learning tasks - classification and regression (value prediction). 
 
@@ -48,13 +48,6 @@ List of ORNL contributors
 * Jian Peng (pengj@ornl.gov)
 
 
-# Installation (An Easy Way)
-```sh
-pip install ascends-toolkit
-(or pip3 install ascends-toolkit)
-
-```
-
 # Installation (With Anaconda)
 
 ASCENDS requires Python version 3.X, and using Anaconda is recommended.
@@ -80,18 +73,23 @@ You will see the active environment in parentheses at the beginning of your comm
 ```
 (ascends) $
 ```
-Please update your pip to up-to-date by doing:
+Please install pip in your local conda environment by doing:
 ```
-(ascends) $ pip install --upgrade pip
+(ascends) $ conda install --yes pip
 ```
 
-Then, go into ascends main folder and locate two text files - pip_requirements.txt, and conda_requirements.txt and do
+Then, install ascends-toolkit by doing:
 ```
-(ascends) $ conda install --yes --file conda_requirements.txt
-(ascends) $ pip install -r pip_requirements.txt
+(ascends) $ pip install ascends-toolkit
 ```
 
 Now you're ready to use ascends. Please see the next section for a quick start guide.
+To check if you properly installed ascends-toolkit, run 
+```
+(ascends) $ train_regression.py -h
+```
+If you see the usage help of regression trainer, you're ready to go.
+Now have fun with ascends-toolkit.
 
 To deactivate the current Anaconda environment, after using ascends.
 
