@@ -61,13 +61,18 @@ def main(args):
     except:
         pass
     
+    for key in mapping.keys():
+        data[key] = data[key].map(mapping[key])
+    
     outcome = model.predict(data)
+    
     if model_dict['model_abbr']=='NET':
         outcome = outcome.reshape(len(outcome),)
     result = pd.DataFrame(outcome,columns=[model_dict['target_col']])
     final = original_data.join(result)
     
     new_set_of_dicts = {}
+    print(mapping)
     if mapping!={}:
         for key in mapping.keys():
             dict_item = mapping[key]

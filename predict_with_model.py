@@ -66,6 +66,9 @@ def main(args):
     except:
         pass
 
+    for key in mapping.keys():
+        data[key] = data[key].map(mapping[key])
+    
     outcome = model.predict(data)
     
     if model_dict['model_abbr']=='NET':
