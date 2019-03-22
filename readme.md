@@ -18,7 +18,7 @@ Users can train a predictive model (mapping function) that approximates a contin
 using ASCENDS. For instance, ASCENDS can train a model for predicting a value of house based on square footage, 
 number of bedrooms, number of cars that can be parked in its garages, number of storages.
 
-ASCENDS current version is 0.2.2, and we are currently beta-testing the software.
+ASCENDS current version is 0.2.3, and we are currently beta-testing the software.
 
 ASCENDS principles
 
