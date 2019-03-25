@@ -178,8 +178,9 @@ def data_load_shuffle(csv_file, input_col, cols_to_remove, target_col, random_st
                     new_y_train.append(item)
                 y_train = np.array(new_y_train)
                 
-    for key in map_all.keys():
-        data_df[key] = data_df[key].map(map_all[key])
+    
+        for key in map_all.keys():
+            data_df[key] = data_df[key].map(map_all[key])
 
     x_train = x_train.astype('float32')
     y_train = y_train.astype('float32')
